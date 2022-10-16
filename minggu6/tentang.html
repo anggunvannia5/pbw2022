@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contoh Project Pemrograman Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #5a33a1;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 15%;
+      background: #fff;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      padding: 10px;
+      padding-top: 30px;
+    }
+
+    nav ul li a {
+      list-style-type: none;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 85%;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    div {
+      display: flex;
+    }
+
+    p {
+      width: 55%;
+      padding: 30px;
+      padding-left: 10%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: -5px;
+    }
+
+    table {
+      margin-left: 130px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #5a33a1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Tugas Minggu ke-6</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Cv(1).pdf">Download CV</a>
+        </li>
+        <li>
+          <a href="contact.html">Kontak</a>
+        </li>
+        <li>
+          <a href="tentang.html">Tentang</a>
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <h1>BIODATA MAHASISWA</h1>
+      <div>
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Anggun Vannia</td>
+          </tr>
+          <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>A112214106</td>
+          </tr>
+          <tr>
+            <td>Dosen Wali</td>
+            <td>:</td>
+            <td>Dr. Wahyu Aji Eko Prabowo, S.SI,M.T</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td>Aktif</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td>Truko RT 03 / RW 08, Getas, Singorojo, Kendal
+            </td>
+          </tr>
+          <tr>
+            <td>No HP</td>
+            <td>:</td>
+            <td>083836927964</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>111202214106@mhs.dinus.ac.id</td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td>Islam</td>
+          </tr>
+        </table>
+        <img src="FotoAnggun.jpeg" alt="" width="150px" height="200px" style="margin-left: 8%" />
+      </div>
+      <div style="max-width: 600px; margin: auto">
+        <table border="1" width="100%" style="margin: 0">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Pengalaman</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>Mengarang Cerita</li>
+                  <li>Html & CSS</li>
+                  <li>Memiliki Public Speaking yang baik</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Bekerja di Kantor Shopee sebagai Web Developer</li>
+                  <li>Memenangkan Kompetisi Web Design</li>
+                  <li>Mengisi acara seminar tentang Develop Web</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </article>
+  </section>
+
+  <footer>
+    <h2>Copyright &copy;2022 Anggun Vannia- A11.2022.14106</h2>
+  </footer>
+</body>
+
+</html>
